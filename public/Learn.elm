@@ -1,21 +1,6 @@
-import WebSocket
-import Mouse
 import Json
 import Dict
--- User land
- 
-unconfirmed : Signal String
-unconfirmed = WebSocket.connect "ws://ws.blockchain.info/inv" (constant "{\"op\":\"unconfirmed_sub\"}")
- 
-clean : String -> Element
-clean t = 
-  (Json.fromString t)   |> 
-  delve [ "x", "hash" ] |>
-  mbind decodeStr       |>
-  getOrElse ""          |>
-  asText
- 
-main = lift clean unconfirmed
+
  
 -- Library land
  

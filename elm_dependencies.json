@@ -6,8 +6,6 @@
     "exposed-modules": [],
     "elm-version": "0.12.3",
     "dependencies": {
-        "maxsnew/Error": "0.1",
-        "JoeyEremondi/JsonUtils": "0.1"
     },
     "repository": "https://github.com/USER/PROJECT.git"
 }
