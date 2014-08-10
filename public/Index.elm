@@ -29,7 +29,8 @@ body = style bodyStyle <|
   toText "My language of choice is Ruby, but I've worked a lot with (and like) Java, among others.\n\n" ++ 
   toText "I recently finished a co-op at " ++ Text.link "http://hubspot.com" (toText "Hubspot") ++
   toText ", which was AMAZING - I worked extensively with Java, Hadoop, HBase, and Kafka (Kafka is awesome). The experience really sparked my interest in distributed systems.\n\n" ++
-  toText "I love Bitcoin - in fact, a few friends and I are working on `Zenchi`, a Bitcoin" ++ 
+  toText "I love Bitcoin - in fact, a few friends and I are working on " ++
+  Text.link "http://zenchiapp.com/index.html" (toText "Zenchi") ++ toText ", a Bitcoin" ++ 
   toText " spending tracking site. It's closed source for now, but I've release some tools " ++
   toText "we've made and use " ++ Text.link "https://github.com/zenchilabs" (toText "here") ++
   toText ".\n\nFeel free to contact me at larisch.j(at)husky.neu.edu."
