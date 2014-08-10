@@ -33,7 +33,9 @@ body = style bodyStyle <|
   Text.link "http://zenchiapp.com/index.html" (toText "Zenchi") ++ toText ", a Bitcoin" ++ 
   toText " spending tracking site. It's closed source for now, but I've release some tools " ++
   toText "we've made and use " ++ Text.link "https://github.com/zenchilabs" (toText "here") ++
-  toText ".\n\nFeel free to contact me at larisch.j(at)husky.neu.edu."
+  toText ".\n\nFeel free to email me at larisch.j(at)husky.neu.edu." ++ 
+  toText "\n\nOr, message me on " ++ Text.link "https://bitmessage.org/wiki/Main_Page" (toText "Bitmessage") ++
+  toText " at BM-2cTrjR87LoxFQZRSdp6aj5gW9Zekxj59rK."
 
 getSpinners : Int -> Int -> Int -> Form
 getSpinners raw x y =
@@ -54,7 +56,7 @@ getPage hash c (w,h) (x,y) =
     collage w 120 [ getSpinners c x y ],
     width w <| centered <| style hashStyle (hash ++ (toText "\n")),
     container w (round (0.75 * (toFloat h))) midTop <| 
-              width (round (0.4 * (toFloat w))) <| 
+              width (round (0.45 * (toFloat w))) <| 
               leftAligned body
   ]
 
