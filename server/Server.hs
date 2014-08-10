@@ -35,7 +35,7 @@ data Flags = Flags
 
 flags :: Flags
 flags = Flags
-  { port = 8000 &= help "set the port of the server"
+  { port = 80 &= help "set the port of the server"
   }
 
 -- | Set up the server.
