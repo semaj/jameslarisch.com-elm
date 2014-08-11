@@ -31,7 +31,7 @@ body = style bodyStyle <|
   toText ", which was AMAZING - I worked extensively with Java, Hadoop, HBase, and Kafka (Kafka is awesome). The experience really sparked my interest in distributed systems.\n\n" ++
   toText "I love Bitcoin - in fact, a few friends and I are working on " ++
   Text.link "http://zenchiapp.com/index.html" (toText "Zenchi") ++ toText ", a Bitcoin" ++ 
-  toText " spending tracking site. It's closed source for now, but I've release some tools " ++
+  toText " spending tracking site. It's closed source for now, but I've released some tools " ++
   toText "we've made and use " ++ Text.link "https://github.com/zenchilabs" (toText "here") ++
   toText ".\n\nFeel free to email me at larisch.j(at)husky.neu.edu." ++ 
   toText "\n\nOr, message me on " ++ Text.link "https://bitmessage.org/wiki/Main_Page" (toText "Bitmessage") ++
